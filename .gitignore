@@ -3,8 +3,14 @@
 
 # LaTeX build artifacts
 *.aux
+*.bbl
+*.bcf
+*.blg
 *.fdb_latexmk
 *.fls
+*.glo
+*.ist
 *.log
 *.out
 *.pdf
+*.run.xml
