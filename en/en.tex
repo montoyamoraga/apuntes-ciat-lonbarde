@@ -1,6 +1,47 @@
-\documentclass{report}
+\documentclass[10pt, openany]{book}
+
+\usepackage{xcolor}
+
+\definecolor{linkgray}{gray}{0.3}
+
+\usepackage[
+  colorlinks=true,
+  linkcolor=linkgray,
+  citecolor=linkgray,
+  urlcolor=linkgray
+]{hyperref}
+
+\usepackage{csquotes}
+\usepackage[style=verbose-note]{biblatex}
+\addbibresource{biblio.bib}
+
+\usepackage{glossaries}
+\makeglossaries
+\setglossarystyle{altlist}
+
+\usepackage[paperwidth=148mm, paperheight=210mm, margin=1.5cm]{geometry}
+
+\usepackage[T1]{fontenc}
+\IfFileExists{noto.sty}{\usepackage{noto}}{\usepackage{lmodern}}
+
+\usepackage{graphicx}
+\graphicspath{imagenes/}
+
+\usepackage{float}
+\usepackage{placeins}
+
+\usepackage{subfiles}
+\usepackage{parskip}
+
+% language
 \usepackage[english]{babel}
-\usepackage{hyperref}
+
+
+\usepackage{circuitikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+
 \input{shared/lang-en}
 \begin{document}
 \input{shared/content}
